@@ -1,0 +1,11 @@
+server:
+  port: 8888
+  
+# sdk or dns
+servicediscovery:
+  method:${SERVICE_DISCOVERY_METHOD:dns}
+
+aws:
+  cloudmap:
+    namespace:${AWS_CLOUD_MAP_NAMESPACE:my-awsdiscovery-detection}
+    service:${AWS_CLOUD_MAP_SERVICE:my-awsdiscovery}
